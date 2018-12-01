@@ -1,4 +1,4 @@
-hpackage com.example.corne.journal;
+package com.example.corne.journal;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
