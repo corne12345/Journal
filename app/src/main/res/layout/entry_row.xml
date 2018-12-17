@@ -6,6 +6,7 @@
     android:id="@+id/entry"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
     android:gravity="top|center"
     android:orientation="horizontal"
     tools:layout_editor_absoluteX="8dp"
@@ -16,6 +17,7 @@
         android:layout_width="161dp"
         android:layout_height="104dp"
         android:layout_weight="1"
+        android:padding="4dp"
         tools:srcCompat="@android:color/holo_green_light" />
 
     <LinearLayout
@@ -29,24 +31,32 @@
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp"
+            android:padding="4dp"
+            android:paddingLeft="8dp"
             android:text="TextView"
+            android:textSize="18sp"
+            android:textStyle="bold"
             tools:text="Title Tiltle Title" />
 
         <TextView
             android:id="@+id/dateTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="26-11-2018 14:40" />
+            android:padding="4dp"
+            android:paddingLeft="8dp"
+            android:text="26-11-2018 14:40"
+            android:textSize="18sp"
+            android:textStyle="italic" />
 
         <TextView
             android:id="@+id/Text_mood"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="2dp"
-            android:padding="8dp"
+            android:padding="4dp"
+            android:paddingLeft="8dp"
             android:text="TextView"
+            android:textSize="18sp"
             tools:text="Text_mood" />
     </LinearLayout>
 

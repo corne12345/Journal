@@ -21,10 +21,12 @@ public class InputActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_input);
 
+        // Set onclicklistener for confirmbutton
         mConfirmButton = (Button) findViewById(R.id.confirmationButton);
         mConfirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Retrieve all input information into strings
                 TextView title = findViewById(R.id.editTitle);
                 String titleString = title.getText().toString();
 
@@ -36,10 +38,12 @@ public class InputActivity extends AppCompatActivity {
                 RadioButton checkedMood = (RadioButton) findViewById(moodInt);
                 String moodString = (String) checkedMood.getText().toString();
 
+                // Create journal entry with the retrieved information and insert in database
                 JournalEntry entry = new JournalEntry(titleString, contentString, moodString);
                 EntryDatabase db = EntryDatabase.getInstance(getApplicationContext());
                 db.insert(entry);
 
+                // Create intent to go to MainActivity
                 Intent intent = new Intent(InputActivity.this, MainActivity.class);
                 startActivity(intent);
             }

@@ -53,7 +53,7 @@
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="71dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -68,8 +68,8 @@
 
         <RadioButton
             android:id="@+id/radioButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/angry"
             android:buttonTint="@color/colorAccent"
@@ -78,8 +78,8 @@
 
         <RadioButton
             android:id="@+id/radioButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/happy"
             android:buttonTint="@color/colorAccent"
@@ -88,8 +88,8 @@
 
         <RadioButton
             android:id="@+id/radioButton3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/sad"
             android:buttonTint="@color/design_default_color_primary_dark"
@@ -98,8 +98,8 @@
 
         <RadioButton
             android:id="@+id/radioButton4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/scared"
             android:buttonTint="@color/colorPrimaryDark"

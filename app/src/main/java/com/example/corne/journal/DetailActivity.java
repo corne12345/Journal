@@ -14,10 +14,13 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+
+        // Get intent and retrieve clicked entry
         Intent intent = getIntent();
         JournalEntry retrievedEntry = (JournalEntry) intent.getSerializableExtra("clickedEntry");
         String timestampString = (String) intent.getSerializableExtra("timestamp");
 
+        // Connect clicked entry to all textviews, displaying the parameters
         TextView title = (TextView) findViewById(R.id.title);
         String titleString = retrievedEntry.getTitle();
         title.setText(titleString);
@@ -26,7 +29,7 @@ public class DetailActivity extends AppCompatActivity {
         timestamp.setText(timestampString);
 
         TextView mood = (TextView) findViewById(R.id.mood);
-        String moodString = retrievedEntry.getMood();
+        String moodString = retrievedEntry.getMood().toUpperCase();
         mood.setText(moodString);
 
         TextView content = (TextView) findViewById(R.id.content);
